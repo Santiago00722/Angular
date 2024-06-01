@@ -1,0 +1,26 @@
+{
+  "pacientes": [
+    {
+      "PacienteId": 1,
+      "Nombre": "Zamuel Valladares",
+      "DNI": "00000002S", 
+      "Telefono": "636112232",
+      "Correo": "Paciente1@gmail.com"    
+    },
+    {
+      "PacienteId": 5,
+      "Nombre": "Ramon Alcala",
+      "DNI": "00004006A", 
+      "Telefono": "645992232",
+      "Correo": "Paciente5@gmail.com"    
+    },
+    {
+      "PacienteId": 6,
+      "Nombre": "Ana Garcia",
+      "DNI": "20009003A", 
+      "Telefono": "645592232",
+      "Correo": "Paciente6@gmail.com"    
+    }    
+  ]
+}
+

@@ -1,0 +1,7 @@
+Para arrancar Tarjetas
+json-server --watch tarjetas.json --host 192.168.1.145
+json-server --watch Redsysmensj.json --host 192.168.1.145
+json-server --watch MenjRedsys.json --host 192.168.1.145
+
+Por defecto
+json-server --watch db.json

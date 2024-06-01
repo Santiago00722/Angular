@@ -1,0 +1,126 @@
+{
+  "cvn": [
+    {
+      "tarjeta": "5489040000000001",
+      "cvn10": "ABABABABABABABAB",
+      "cvn17": "CDCDCDCDCDCDCDCD",
+      "cvn18": "EFEFEFEFEFEFEFE4",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "tarjeta": "5489050000000002",
+      "cvn10": "",
+      "cvn17": "",
+      "cvn18": ""
+    },
+    {
+      "id": 4,
+      "tarjeta": "4356770000000002",
+      "cvn10": "",
+      "cvn17": "",
+      "cvn18": ""      
+    }
+  ],
+  "cavv": [
+    {
+      "id": 1,
+      "tarjeta": "5489040000000001",
+      "cavv": "9101",
+      "cavv7": "0201"
+    },
+    {
+      "id": 2,
+      "tarjeta": "5489050000000002",
+      "cavv": "",
+      "cavv7": ""
+    },
+    {
+      "id": 4,
+      "tarjeta": "4356770000000002",      
+      "cavv": "",
+      "cavv7": ""
+    }
+  ],
+  "cvv": [
+    {
+      "id": 1,
+      "tarjeta": "5489040000000001",
+      "cvv101": "101",
+      "cvv201": "201",
+      "cvv999": "999",
+      "cvv2": "000"
+    },
+    {
+      "id": 2,
+      "tarjeta": "5489050000000002",
+      "cvv101": "",
+      "cvv201": "",
+      "cvv999": "",
+      "cvv2": ""
+    },
+    {
+      "id": 4,
+      "tarjeta": "4356770000000002",
+      "cvv101": "",
+      "cvv201": "",
+      "cvv999": "",
+      "cvv2": ""
+    }
+  ],
+  "pin": [
+    {
+      "id": 1,
+      "tarjeta": "5489040000000001",
+      "pin": "FAABABABABABABAB",
+      "offset": "0641",
+      "pvv": "0645"
+    },
+    {
+      "id": 2,
+      "tarjeta": "5489040000000002",
+      "pin": "FAABABABABABABAB",
+      "offset": "0641",
+      "pvv": "0645"
+    },
+    {
+      "id": 4,
+      "tarjeta": "4356770000000002",      
+      "pin": "FAABABABABABABAB",
+      "offset": "0641",
+      "pvv": "0645"
+    }
+  ],
+  "tarjetas": [
+    {
+      "NumTarj": "5489040000000001",
+      "FecCaduc": "5012",
+      "Pista2": "5489040000000001D3012101011000000",
+      "PVV_active": 1,
+      "CVV_active": 1,
+      "CAVV_active": 1,
+      "CVN_active": 1,
+      "id": 1
+    },
+    {
+      "NumTarj": "5489050000000002",
+      "FecCaduc": "9912",
+      "Pista2": "5489050000000002=99122018760000000",
+      "PVV_active": true,
+      "CVV_active": "",
+      "CAVV_active": "",
+      "CVN_active": "",
+      "id": 2
+    },
+    {
+      "NumTarj": "4356770000000002",
+      "FecCaduc": "2502",
+      "Pista2": "4356770000000002D2502101800000000",
+      "PVV_active": true,
+      "CVV_active": "",
+      "CAVV_active": "",
+      "CVN_active": "",
+      "id": 4
+    }
+  ]
+}
