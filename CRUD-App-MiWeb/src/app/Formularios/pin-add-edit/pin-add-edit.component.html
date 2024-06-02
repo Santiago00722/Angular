@@ -1,0 +1,43 @@
+<div mat-dialog-title>
+    <!--Para añadir o modificar tarjeta-->
+    <h1>Formulario PIN</h1>    
+</div>
+<form [formGroup]="pinForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Tarjeta</mat-label>
+                <input matInput type="text" placeholder="548904......1211" formControlName="tarjeta">
+            </mat-form-field>
+            
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>PIN</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="pin">
+            </mat-form-field>            
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>OFFSET</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="offset">
+            </mat-form-field>            
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>PVV</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="pvv">
+            </mat-form-field>            
+        </div>
+        
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>        
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Modificar': 'Guardar'}}</button>
+        <!--<button type="button">Cancelar</button>-->
+        <!--<button type="submit">{{data ? 'Modificar': 'Guardar'}}</button>-->
+    </div>
+</form>

@@ -1,0 +1,49 @@
+<div mat-dialog-title>
+    <!--Para añadir o modificar tarjeta-->
+    <h1>Formulario CVV</h1>    
+</div>
+<form [formGroup]="cvvForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Tarjeta</mat-label>
+                <input matInput type="text" placeholder="548904......1211" formControlName="tarjeta">
+            </mat-form-field>
+            
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>CVV-101</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="cvv101">
+            </mat-form-field>            
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>CVV-201</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="cvv201">
+            </mat-form-field>            
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>CVV-999</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="cvv999">
+            </mat-form-field>            
+        </div>
+        
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>CVV2</mat-label>
+                <input matInput type="text" placeholder="xxxx" formControlName="cvv2">
+            </mat-form-field>            
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>        
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Modificar': 'Guardar'}}</button>
+        <!--<button type="button">Cancelar</button>-->
+        <!--<button type="submit">{{data ? 'Modificar': 'Guardar'}}</button>-->
+    </div>
+</form>

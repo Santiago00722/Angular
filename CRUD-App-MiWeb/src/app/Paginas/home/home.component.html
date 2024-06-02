@@ -1,0 +1,51 @@
+<mat-toolbar color="primary" class="example-toolbar">
+	<button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
+	<h1 class="example-app-name">Menus SVE</h1>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container" autosize>
+	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<mat-nav-list>
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Parent Menu</span>
+				<mat-icon mat-list-icon>home</mat-icon>
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+			<div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
+				<a mat-list-item routerLink="tarjetas">Tarjetas</a>
+				<!--<a mat-list-item href="...">Mensajes</a>-->
+				<mat-list-item (click)="showSubSubMenu0 = !showSubSubMenu0" class="parent">
+					<span class="full-width" *ngIf="isExpanded || isShowing0">Mensajes</span>
+					<mat-icon class="menu0-button" [ngClass]="{'rotated' : showSubSubMenu0}" *ngIf="isExpanded || isShowing0">expand_more</mat-icon>
+				</mat-list-item>
+				<div class="submenu" [ngClass]="{'expanded' : showSubSubMenu0}" *ngIf="isShowing0 || isExpanded">
+					<mat-list-item routerLink="mRedsys">Men. REDSYS</mat-list-item>
+					<mat-list-item>Men. VISA</mat-list-item>
+					<mat-list-item>Men. MASTERCARD DEB</mat-list-item>
+					<mat-list-item>Men. MASTERCARD GLOBAL CICS</mat-list-item>
+				</div>
+				<mat-list-item (click)="showSubSubMenu = !showSubSubMenu" class="parent">
+					<span class="full-width" *ngIf="isExpanded || isShowing">Nested Menu</span>
+					<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubSubMenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+				</mat-list-item>
+				<div class="submenu" [ngClass]="{'expanded' : showSubSubMenu}" *ngIf="isShowing || isExpanded">
+					<mat-list-item>SubSubmenu Item 1</mat-list-item>
+					<mat-list-item>SubSubmenu Item 2</mat-list-item>
+				</div>
+			</div>
+		</mat-nav-list>
+    <mat-nav-list>
+</mat-nav-list>
+	</mat-sidenav>
+
+	<div class="example-sidenav-content">
+		<!--Main content that resizes proper -->
+        <!--<video src="../../../assets/video2.mp4" width="640" height="360" autoplay loop>-->            
+			<video width="640" height="360" controls>
+				<source src="../../../assets/video2.mp4" type="video/mp4">
+				<source src="../../../movie.ogg" type="video/ogg">
+			  Your browser does not support the video tag.
+			  </video>
+	</div>
+
+</mat-sidenav-container>
